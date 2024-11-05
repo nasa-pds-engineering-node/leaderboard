@@ -39,10 +39,6 @@
       {
          "name" : "https://github.com/NASA-PDS/data-upload-manager",
          "type" : "repository"
-      },
-      {
-         "name" : "https://github.com/NASA-PDS/pds4-jparser",
-         "type" : "repository"
       }
    ]
 }
