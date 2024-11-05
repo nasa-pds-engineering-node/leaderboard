@@ -51,8 +51,8 @@ jobs:
             -
                 name: 📲 Software Installation
                 run: |
-                    apt-get update --quiet --yes
-                    apt-get install --quiet --yes pandoc
+                    sudo apt-get update --quiet --yes
+                    sudo apt-get install --quiet --yes pandoc
                     pip install --no-input --quiet --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ slim-leaderboard
             -
                 name: 📈 Leaderboard Generation
