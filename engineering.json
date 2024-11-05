@@ -1,0 +1,44 @@
+{
+   "targets" : [
+      {
+         "name" : "https://github.com/NASA-PDS/validate",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/pds-api-client",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/search-api-notebook",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/pds4-information-model",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/registry",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/peppi",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/wds",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/portal-wp",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/wds-react",
+         "type" : "repository"
+      },
+      {
+         "name" : "https://github.com/NASA-PDS/data-upload-manager",
+         "type" : "repository"
+      }
+   ]
+}
