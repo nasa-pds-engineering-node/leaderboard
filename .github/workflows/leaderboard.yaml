@@ -56,7 +56,7 @@ jobs:
                 run: |
                     mkdir --parents gh-pages
                     rm --force gh-pages/index.md
-                    echo -e "---\nlayout: default\n---\n" > index.md
+                    echo -e "---\nlayout: default\n---\n" > gh-pages/index.md
                     slim-leaderboard --emoji --output_format MARKDOWN engineering.json >> gh-pages/index.md
                 env:
                     GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
