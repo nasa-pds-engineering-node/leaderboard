@@ -18,6 +18,7 @@ on:
             -   main
         paths:
             -   'engineering.json'
+            -   '.github/workflows/leaerboard.yaml'
     schedule:
         -   cron: '45 3 * * *'
 
@@ -36,7 +37,7 @@ jobs:
                 name: 📚 Repository Checkout
                 uses: actions/checkout@v4.2.2
                 with:
-                    token: ${{secrets.TOKEN}}
+                    token: ${{secrets.GITHUB_TOKEN}}
             -
                 name: 🐍 Python Wrangling
                 uses: actions/setup-python@v4
@@ -57,12 +58,14 @@ jobs:
                     mkdir --parents gh-pages
                     slim-leaderboard --emoji --output_format MARKDOWN engineering.json > gh-pages/index.md
                 env:
-                    GITHUB_TOKEN: ${{secrets.TOKEN}}
+                    GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
             -
                 name: 📢 Leaderbord Publication
                 uses: peaceiris/actions-gh-pages@v4
-                publish_dir: gh-pages
-                publish_branch: gh_pages
+                with:
+                    github_token: ${{secrets.GITHUB_TOKEN}}
+                    publish_dir: gh-pages
+                    publish_branch: gh_pages
 
 ...
 
